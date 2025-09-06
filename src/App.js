@@ -9,6 +9,8 @@ import UseeffectComponent from "./Components/Useeffect";
 import Usecontext from "./Components/Usecontext";
 import UsereducerComponent from "./Components/Usereducer";
 import UsememoComponent from "./Components/Usememo";
+import CustomHooks from "./Components/CustomHooks/Customhooks";
+import UseCounter from "./Components/CustomHooks/Usecounter";
 
 const App=()=>{
     return (
@@ -54,7 +56,17 @@ const appRouter = createBrowserRouter(
                 {
                     path:"/useMemo",
                     element:<UsememoComponent/>
+                },
+                {
+                    path:"/customHook",
+                    element:<CustomHooks/>
+                   
+                },
+                {
+                    path:"/useCounter",
+                    element:<UseCounter/>
                 }
+
             ],
             errorElement:<Error/>
         }
