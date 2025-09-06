@@ -9,6 +9,7 @@ const HeaderComponent=()=>{
                 <li className="px-4"><Link to="/useEffect">useEffect</Link></li>
                 <li className="px-4"><Link to="/useContext">useContext</Link></li>
                 <li className="px-4"><Link to="/useReducer">useReducer</Link></li>
+                <li className="px-4"><Link to="/useMemo">useMemo-Callback</Link></li>
             </ul>
         </div>
         

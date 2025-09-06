@@ -8,6 +8,7 @@ import HeaderComponent from "./Components/Header";
 import UseeffectComponent from "./Components/Useeffect";
 import Usecontext from "./Components/Usecontext";
 import UsereducerComponent from "./Components/Usereducer";
+import UsememoComponent from "./Components/Usememo";
 
 const App=()=>{
     return (
@@ -49,6 +50,10 @@ const appRouter = createBrowserRouter(
                 {
                     path:"/useReducer",
                     element:<UsereducerComponent/>
+                },
+                {
+                    path:"/useMemo",
+                    element:<UsememoComponent/>
                 }
             ],
             errorElement:<Error/>
