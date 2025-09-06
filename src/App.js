@@ -5,6 +5,8 @@ import Error from './Components/Error';
 import UsestateComponent from './Components/Usestate';
 import {createBrowserRouter,Outlet,RouterProvider} from 'react-router-dom'
 import HeaderComponent from "./Components/Header";
+import UseeffectComponent from "./Components/Useeffect";
+import Usecontext from "./Components/Usecontext";
 
 const App=()=>{
     return (
@@ -34,6 +36,14 @@ const appRouter = createBrowserRouter(
                 {
                     path:"/useState",
                     element:<UsestateComponent/>
+                },
+                {
+                    path:"/useEffect",
+                    element:<UseeffectComponent/>
+                },
+                {
+                    path:"/usecontext",
+                    element:<Usecontext/>
                 }
             ],
             errorElement:<Error/>

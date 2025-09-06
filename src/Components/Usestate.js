@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+
 
 const UsestateComponent=()=>{
 
     const [count,setCount]=useState(0);
+    // const data=useContext(ThemeContext);
+    // console.log(data);
 
     const handleIncrement=()=>{
        setCount((prev)=>prev+1)
