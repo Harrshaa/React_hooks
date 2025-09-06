@@ -7,6 +7,7 @@ import {createBrowserRouter,Outlet,RouterProvider} from 'react-router-dom'
 import HeaderComponent from "./Components/Header";
 import UseeffectComponent from "./Components/Useeffect";
 import Usecontext from "./Components/Usecontext";
+import UsereducerComponent from "./Components/Usereducer";
 
 const App=()=>{
     return (
@@ -44,6 +45,10 @@ const appRouter = createBrowserRouter(
                 {
                     path:"/usecontext",
                     element:<Usecontext/>
+                },
+                {
+                    path:"/useReducer",
+                    element:<UsereducerComponent/>
                 }
             ],
             errorElement:<Error/>
